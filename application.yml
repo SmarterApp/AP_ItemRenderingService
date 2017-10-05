@@ -51,13 +51,11 @@ ivs:
   ivsBaseDir: "${IVS_BASE_DIR:${HOME}/ItemBankIVS}"
   cleanupThresholdHours: "1"
 
-cleanupIrsBaseDir:
-  in:
-    milliseconds: "30000"
-
-cleanupIvsBaseDir:
-  in:
-    milliseconds: "30000"
+tasks:
+  irsItemCleanupThresholdMillis : "30000"
+  irsItemCleanupRunEveryMillis: "30000"
+  ivsItemCleanupThresholdMillis : "30000"
+  ivsItemCleanupRunEveryMillis: "30000"
 
 ---
 spring:
