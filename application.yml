@@ -49,6 +49,13 @@ ivs:
   reloadEndpoint: "${IVS_RELOAD_ENDPOINT:/Pages/API/content/reload}"
   itemMapping: "${IVS_ITEM_MAPPING:/item}"
   ivsBaseDir: "${IVS_BASE_DIR:${HOME}/ItemBankIVS}"
+  cleanupThresholdHours: "1"
+
+tasks:
+  irsItemCleanupThresholdMillis : "30000"
+  irsItemCleanupRunEveryMillis: "30000"
+  ivsItemCleanupThresholdMillis : "30000"
+  ivsItemCleanupRunEveryMillis: "30000"
 
 ---
 spring:
