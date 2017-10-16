@@ -52,8 +52,8 @@ ivs:
   cleanupThresholdHours: "1"
 
 tasks:
-  irsItemCleanupThresholdMillis : "30000"
-  irsItemCleanupRunEveryMillis: "30000"
+  itemCleanupThresholdMillis : "30000"
+  itemCleanupRunEveryMillis: "30000"
   ivsItemCleanupThresholdMillis : "30000"
   ivsItemCleanupRunEveryMillis: "30000"
 
