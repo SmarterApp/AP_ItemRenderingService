@@ -54,7 +54,7 @@ ivs:
 tasks:
   irsItemCleanupThresholdMillis : "30000"
   irsItemCleanupRunEveryMillis: "30000"
-  ivsItemCleanupThresholdMillis : "30000"
+  ivsItemCleanupThresholdMillis : "18000000"
   ivsItemCleanupRunEveryMillis: "30000"
 
 ---
