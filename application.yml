@@ -50,12 +50,13 @@ ivs:
   itemMapping: "${IVS_ITEM_MAPPING:/item}"
   ivsBaseDir: "${IVS_BASE_DIR:${HOME}/ItemBankIVS}"
   cleanupThresholdHours: "1"
+  internalContentDir: "/home/tomcat7/content"
 
 tasks:
-  irsItemCleanupThresholdMillis : "30000"
-  irsItemCleanupRunEveryMillis: "30000"
-  ivsItemCleanupThresholdMillis : "18000000"
-  ivsItemCleanupRunEveryMillis: "30000"
+  itemCleanupThresholdMillis : "1800000"
+  itemCleanupRunEveryMillis: "1800000"
+  ivsItemCleanupThresholdMillis : "1800000"
+  ivsItemCleanupRunEveryMillis: "1800000"
 
 ---
 spring:
