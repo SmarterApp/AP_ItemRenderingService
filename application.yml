@@ -39,7 +39,7 @@ itembank:
   user: "${GITLAB_USER}"
   password: "${GITLAB_PASSWORD}"
   group: "${GITLAB_GROUP}"
-  localBaseDir: "${HOME}/ItemBankIRS"
+  localBaseDir: "${HOME}/ItemBankIVS"
   apiVersion: "/api/v4"
   bankKey: "187"
 
