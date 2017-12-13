@@ -1,0 +1,18 @@
+itembank:
+  localBaseDir: "/ItemBankIVS"
+
+ivs:
+  host: "http://ap-ivs-service"
+  externalHost: "@REPLACE@"
+  reloadEndpoint: "/Pages/API/content/reload"
+  itemMapping: "/item"
+  ivsBaseDir: "/ItemBankIVS"
+  cleanupThresholdHours: "1"
+  internalContentDir: "/home/tomcat7/content"
+
+logging:
+  level:
+    org:
+      opentestsystem:
+        ap:
+          irs: "debug"
