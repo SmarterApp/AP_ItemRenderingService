@@ -27,7 +27,8 @@ logging:
     org:
       opentestsystem:
         ap:
-          irs: DEBUG
+          irs: "debug"
+          common: "debug"
 
 spring:
   session:
