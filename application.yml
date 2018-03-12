@@ -43,6 +43,7 @@ itembank:
   localBaseDir: "${HOME}/ItemBankIVS"
   apiVersion: "/api/v4"
   bankKey: "187"
+  systemVersion: "iat-6"
 
 ivs:
   host: "${IVS_HOST:http://localhost:8200}"
