@@ -55,9 +55,11 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-actuator'
     compile 'org.springframework.boot:spring-boot-starter-security'
     compile 'org.springframework.boot:spring-boot-starter-aop'
+    compile 'org.springframework.boot:spring-boot-starter-amqp'
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-log4j2'
     compile 'org.springframework.boot:spring-boot-starter-data-redis'
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
 
     compile 'org.springframework.cloud:spring-cloud-starter-config'
 
@@ -82,6 +84,11 @@ dependencies {
     compile 'io.springfox:springfox-swagger2:2.6.1'
     compile 'io.springfox:springfox-swagger-ui:2.6.1'
 
+    compile 'org.hibernate:hibernate-java8:5.0.12.Final'
+    compile 'com.vladmihalcea:hibernate-types-5:2.2.0'
+
+    compile 'org.postgresql:postgresql:42.2.4'
+
     compile 'org.apache.httpcomponents:httpclient:4.5.3'
 
     compileOnly 'org.projectlombok:lombok'
@@ -90,7 +97,7 @@ dependencies {
 
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 
-    testCompile 'org.projectlombok:lombok'
+    testCompile 'org.hsqldb:hsqldb'
 }
 
 dependencyManagement {
