@@ -71,11 +71,11 @@ itembank:
     eventKey: "iat.item.event.*"
     error-queue: "iat_item_event_queue.dlq"
     error-event-key: "error.iat.item.event.*"
-
-ivs:
-  host: "${IVS_HOST:http://localhost:8200}"
-  externalHost: "${IVS_HOST:http://localhost:8200}"
-  ivsBaseDir: "${IVS_BASE_DIR:${HOME}/ItemBankIVS}"
+  preview:
+    enabled: true
+    host: "${IVS_HOST:http://localhost:8200}"
+    externalHost: "${IVS_HOST:http://localhost:8200}"
+    ivsBaseDir: "${IVS_BASE_DIR:${HOME}/ItemBankIVS}"
 
 tasks:
   itemCleanupThresholdMillis : "1800000"
