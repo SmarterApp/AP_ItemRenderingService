@@ -56,23 +56,17 @@ itembank:
   localBaseDir: "${HOME}/ItemBankIVS"
   apiVersion: "/api/v4"
   bankKey: "187"
-  systemVersion: "iat-19.1"
-  manager:
-    enabled: true
+  systemVersion: "iat-20"
+  enabled:
+    preview: true
+    database: true
   aws:
     endpointUrl: "https://s3.us-east-2.amazonaws.com"
     region: "us-east-2"
     bucketName: "${itembank.group}"
     accessKey: "${IAT_AWS_ACCESS_KEY}"
     secretKey: "${IAT_AWS_ACCESS_SECRET}"
-  events:
-    exchange: "iat_item_event_exchange"
-    queue: "iat_item_event_queue"
-    eventKey: "iat.item.event.*"
-    error-queue: "iat_item_event_queue.dlq"
-    error-event-key: "error.iat.item.event.*"
   preview:
-    enabled: true
     host: "${IVS_HOST:http://localhost:8200}"
     externalHost: "${IVS_HOST:http://localhost:8200}"
     ivsBaseDir: "${IVS_BASE_DIR:${HOME}/ItemBankIVS}"
@@ -80,8 +74,6 @@ itembank:
 tasks:
   itemCleanupThresholdMillis : "1800000"
   itemCleanupRunEveryMillis: "1800000"
-  ivsItemCleanupThresholdMillis : "1800000"
-  ivsItemCleanupRunEveryMillis: "1800000"
 
 ---
 spring:

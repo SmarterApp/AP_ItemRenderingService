@@ -9,13 +9,19 @@ security:
 spring:
   session:
     enabled: "false"
-  jpa:
-    hibernate:
-      ddl-auto: create-drop
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+      - org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration
 
 itembank:
   test:
     enabled: "true"
+  enabled:
+    preview: false
+    database: false
 
 ---
 spring:
