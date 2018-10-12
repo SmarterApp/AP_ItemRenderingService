@@ -67,8 +67,8 @@ itembank:
     accessKey: "${IAT_AWS_ACCESS_KEY}"
     secretKey: "${IAT_AWS_ACCESS_SECRET}"
   preview:
-    host: "${IVS_HOST:http://localhost:8200}"
-    externalHost: "${IVS_HOST:http://localhost:8200}"
+    host: "${IVS_HOST:/iatpreview}"
+    externalHost: "${IVS_HOST:/iatpreview}"
     ivsBaseDir: "${IVS_BASE_DIR:${HOME}/ItemBankIVS}"
 
 tasks:
