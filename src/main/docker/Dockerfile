@@ -5,7 +5,8 @@
 # The app can be enabled to pull its
 # configuration from a Spring Cloud Config-Server.
 #
-FROM frolvlad/alpine-oraclejdk8:slim
+#FROM frolvlad/alpine-oraclejdk8:slim
+FROM openjdk:8-jdk
 
 MAINTAINER Smarter Balanced "opentestsystem.org"
 
@@ -13,7 +14,13 @@ VOLUME ["/tmp"]
 
 COPY ap-irs.jar /
 
-RUN apk --no-cache add curl
+#RUN apk add --no-cache font-bakoma-ttf
+
+#RUN apk add --no-cache --repository https://nl.alpinelinux.org/alpine/edge/testing font-bakoma-ttf
+
+#RUN apk add --no-cache fonts-arphic-bkai00mp
+
+#RUN apk --no-cache add curl
 
 ENTRYPOINT ["/usr/bin/java"]
 

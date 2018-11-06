@@ -72,14 +72,16 @@ itembank:
     ivsBaseDir: "${IVS_BASE_DIR:${HOME}/ItemBankIVS}"
 
 tasks:
-  itemCleanupThresholdMillis : "1800000"
-  itemCleanupRunEveryMillis: "1800000"
+  itemCleanupThresholdMillis : "1800000000"
+  itemCleanupRunEveryMillis: "1800000000"
 
 ---
 spring:
   profiles: dev
   datasource:
     url: "jdbc:postgresql://imrt-qa-db.cjqp2fdamfoh.us-east-2.rds.amazonaws.com:5432/iat"
+    tomcat:
+      max-active: 2
 
 itembank:
   group: "iat-development"
