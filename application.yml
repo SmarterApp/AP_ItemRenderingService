@@ -58,7 +58,6 @@ itembank:
   bankKey: "187"
   systemVersion: "iat-20"
   enabled:
-    preview: true
     database: true
   aws:
     endpointUrl: "https://s3.us-east-2.amazonaws.com"
