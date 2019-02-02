@@ -55,7 +55,7 @@ itembank:
   group: "${GITLAB_GROUP}"
   localBaseDir: "${HOME}/ItemBankIVS"
   apiVersion: "/api/v4"
-  bankKey: "187"
+  bankKey: "200"
   systemVersion: "iat-20"
   enabled:
     database: true
