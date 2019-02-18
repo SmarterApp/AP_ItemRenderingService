@@ -13,12 +13,6 @@ VOLUME ["/tmp"]
 
 COPY ap-irs.jar /
 
-#RUN apk add --no-cache font-bakoma-ttf
-
-#RUN apk add --no-cache --repository https://nl.alpinelinux.org/alpine/edge/testing font-bakoma-ttf
-
-#RUN apk add --no-cache fonts-arphic-bkai00mp
-
 RUN apk --no-cache add curl
 
 ENTRYPOINT ["/usr/bin/java"]
