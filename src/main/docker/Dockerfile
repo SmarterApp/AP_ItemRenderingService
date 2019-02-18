@@ -19,7 +19,7 @@ COPY ap-irs.jar /
 
 #RUN apk add --no-cache fonts-arphic-bkai00mp
 
-#RUN apk --no-cache add curl
+RUN apk --no-cache add curl
 
 ENTRYPOINT ["/usr/bin/java"]
 
