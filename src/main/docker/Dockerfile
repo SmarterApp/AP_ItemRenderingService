@@ -13,7 +13,11 @@ VOLUME ["/tmp"]
 
 COPY ap-irs.jar /
 
-RUN apk --no-cache add curl
+RUN apt-get update
+
+RUN apt-get -y install curl libunwind8 gettext apt-transport-https
+
+RUN apt-get -y install jq
 
 ENTRYPOINT ["/usr/bin/java"]
 
