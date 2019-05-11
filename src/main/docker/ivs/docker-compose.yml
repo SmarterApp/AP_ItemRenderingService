@@ -2,8 +2,7 @@ version: '2.1'
 services:
     ivs-service:
         container_name: ivs-service
-#        image: osucass/ap_itemviewerservice:3.5.0
-        image: osucass/ap_itemviewerservice:3.5.0-iat
+        image: fwsbac/ap-itemviewerservice:3.6.4.TIMS
         expose:
             - 8080
         ports:
