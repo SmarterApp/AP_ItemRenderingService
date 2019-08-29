@@ -24,11 +24,8 @@ security:
 
 logging:
   level:
-    org:
-      opentestsystem:
-        ap:
-          irs: "debug"
-          common: "debug"
+    org.opentestsystem.ap.irs: "debug"
+    org.opentestsystem.ap.common: "debug"
 
 spring:
   session:
