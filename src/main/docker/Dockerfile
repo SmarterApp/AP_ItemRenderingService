@@ -19,6 +19,4 @@ RUN apt-get -y install curl libunwind8 gettext apt-transport-https
 
 RUN apt-get -y install jq
 
-ENTRYPOINT ["/usr/bin/java"]
-
-CMD ["-jar", "/ap-irs.jar"]
+CMD ["java", "-jar", "/ap-irs.jar"]
