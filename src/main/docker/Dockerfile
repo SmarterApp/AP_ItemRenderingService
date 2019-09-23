@@ -19,6 +19,6 @@ RUN apt-get -y install curl libunwind8 gettext apt-transport-https
 
 RUN apt-get -y install jq
 
-ENTRYPOINT ["/usr/bin/java"]
+ENV MAX_HEAP_SIZE -Xmx384m
 
-CMD ["-jar", "/ap-irs.jar"]
+CMD java $MAX_HEAP_SIZE $JAVA_OPTS -jar ap-irs.jar
