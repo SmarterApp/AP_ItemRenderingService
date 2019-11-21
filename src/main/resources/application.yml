@@ -13,20 +13,18 @@ info:
       source: ${sourceCompatibility}
       target: ${targetCompatibility}
 
-# changes actuator endpoints - /manage/info
+# actuator endpoints
 management:
   context-path: "/manage"
 
-api:
-  context-path: "/api"
+jwt:
+  secret: "\${TIMS_JWT_SECRET}"
 
 security:
   basic:
     enabled: \${SECURITY_ENABLED:true}
 
 spring:
-  session:
-    enabled: \${SESSION_CLUSTER_ENABLED:true}
   datasource:
     url: "jdbc:postgresql://localhost:5432/iat"
     username: \${DB_USER}
@@ -40,6 +38,8 @@ spring:
         show_sql: true
         use_sql_comments: true
         format_sql: true
+        id:
+          new_generator_mappings: true
 
 itembank:
   systemVersion: "iat-41"
